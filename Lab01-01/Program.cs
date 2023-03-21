@@ -63,14 +63,14 @@ namespace Lab01_01
                         break;
                     case "6":
                         Console.WriteLine("Ingrese el grado en Farenheit");
-                        int F = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("La conversion en celcius es: ", F, ConvercionC(F));
+                        int i = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("La conversion en celcius es: ", ConvercionC(i));
                         Console.ReadKey();
                         break;
                     case "7":
                         Console.WriteLine("Ingrese el grado en Celcius");
-                        int C = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("La conversion en celcius es: ", C, ConvercionF(C));
+                        int h = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("La conversion en celcius es: ", ConvercionF(h));
                         Console.ReadKey();
                         break;
                 }
@@ -126,13 +126,13 @@ namespace Lab01_01
             }
         }
 
-        static double ConvercionF(double C)
+        static float ConvercionF(float h)
         {
-            return ((9 * C) / 5) + 32;
+            return (9 * h / 5) + 32;
         }
-        static double ConvercionC(double F)
+        static float ConvercionC(float i)
         {
-            return (5 * (F - 32)) / 9;
+            return (5 * (i - 32)) / 9;
         }
 
     }
